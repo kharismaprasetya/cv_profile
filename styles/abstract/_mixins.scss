@@ -1,10 +1,23 @@
+@use "variables";
+
+// Background mixins
 .bg-grid {
+  position: relative;
   width: 100%;
   height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 
   &::after {
     content: "";
-    background-color: var(--body-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: 100px 100px;
+    background-color: variables.$body;
     background-image: linear-gradient(
         rgba(196, 239, 23, 0.1176470588) 0.8px,
         transparent 0
@@ -14,8 +27,6 @@
         rgba(196, 239, 23, 0.1176470588) 0.8px,
         rgba(12, 15, 0, 0) 0
       );
-    top: 0;
-    left: 0;
     opacity: 0.4;
     z-index: -2;
   }

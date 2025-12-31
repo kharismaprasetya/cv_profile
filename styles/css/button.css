@@ -1,0 +1,46 @@
+@layer components {
+  .btn {
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    outline: none;
+    font-weight: 500;
+    z-index: 1;
+  }
+
+  .btn-primary {
+    background-color: var(--brand-color);
+    color: var(--black-color);
+
+    &:hover {
+      color: var(--title-color);
+
+      &::before {
+        width: 100%;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: var(--indigo-color);
+      z-index: 0;
+      transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 8px;
+    }
+  }
+
+  .btn-primary > * {
+    position: relative;
+    z-index: 1;
+  }
+}

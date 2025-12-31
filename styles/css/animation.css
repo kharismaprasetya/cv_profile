@@ -1,0 +1,23 @@
+@keyframes left-right {
+  0% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.animate-left-right {
+  animation: left-right 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite
+    alternate;
+}
+
+.animate-rotate {
+  animation: rotate 6s cubic-bezier(.41,.15,.64,.86) infinite alternate;
+}
