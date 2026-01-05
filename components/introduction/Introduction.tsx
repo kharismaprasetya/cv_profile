@@ -43,17 +43,54 @@ export default function Introduction() {
             <FaDownload />
           </a>
           <div className="absolute top-[-10%] right-[4%]">
-            <Image className="w-[90px] animate-left-right" width={90} height={90} src="/icons/loop-arrow.svg" alt="Loop Arrow" />
+            <Image
+              className="w-[90px] animate-left-right"
+              width={90}
+              height={90}
+              src="/icons/loop-arrow.svg"
+              alt="Loop Arrow"
+            />
           </div>
           <div className="absolute bottom-[-15%] right-[10%]">
-            <Image className="w-[70px] animate-rotate opacity-50" width={70} height={70} src="/icons/diamond-star.svg" alt="Diamond Star" />
+            <Image
+              className="w-[70px] animate-rotate opacity-50"
+              width={70}
+              height={70}
+              src="/icons/diamond-star.svg"
+              alt="Diamond Star"
+            />
           </div>
           <div className="absolute bottom-[-50%] left-[-25%] w-[300px] h-[300px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-3xl -z-1"></div>
         </div>
         <div className="relative">
           <div className="absolute top-[-10%] right-[4%]">
-            <Image className="w-[70px] animate-spin [animation-duration:6s] opacity-50" width={70} height={70} src="/icons/diamond-star2.svg" alt="Diamond Star" />
+            <Image
+              className="w-[70px] animate-spin [animation-duration:6s] opacity-50"
+              width={70}
+              height={70}
+              src="/icons/diamond-star2.svg"
+              alt="Diamond Star"
+            />
           </div>
+          <div className="absolute top-0 left-0 w-full h-full rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[128px] -z-1"></div>
+          <div className="flex justify-center items-center h-full">
+            <Image
+              className="h-[450px] w-auto"
+              width={246}
+              height={450}
+              src="/images/profile-3.png"
+              alt="Kharisma Prasetya"
+            />
+          </div>
+        </div>
+        <div className="absolute bottom-0 right-0">
+          <Image
+            className="w-[250px] animate-spin [animation-duration:8s]"
+            width={250}
+            height={250}
+            src="/icons/sixline-asterisk.svg"
+            alt="Asterisk"
+          />
         </div>
       </div>
     </section>

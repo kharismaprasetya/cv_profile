@@ -28,6 +28,7 @@
 /* Import custom styles */
 @import "../styles/css/animation.css";
 @import "../styles/css/button.css";
+@import "../styles/css/color.css";
 
 /* Global styles */
 body {
