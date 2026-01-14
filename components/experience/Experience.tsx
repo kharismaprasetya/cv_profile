@@ -4,21 +4,63 @@ import AsteriskIcon from "@/components/icon/AsteriskIcon";
 export default function Experience() {
   const experiences = [
     {
-      year: "2025 to Present",
+      year: "2021 to Present",
       company: "PT. Takodam Ciptamandiri",
-      position: "Frontend Developer",
+      position: "Software Engineer",
       details: [
-        "Create e-commerce omnichannel system that aggregate public e commerce into one platform only",
-        "Create e-commerce omnichannel system that aggregate public e commerce into one platform only",
+        "Develop and integrate ERP system using open source application (ERPNext)",
+        "Create ERP system for automotive industry to planning and maintaining production process",
+        "Create claim management system into health insurance (BPJS)",
+        "Create e-commerce omnichannel system that  aggregate public e-commerce into one platform only",
+        "Develop and maintain e-Posyandu system (FE, BE, Mobile) in the KOMDIGI environment",
+        "Develop and maintain employee system in the KEMENHUBLA environment",
+        "Develop monitoring power consumption system (FE, BE, IoT) in the manufacture factory (UPTD Sragen)",
+        "Create supporting document consists of ERD, UAT, SIT, FSD, and BRD"
       ],
     },
     {
-      year: "2025 to Present",
-      company: "PT. Takodam Ciptamandiri",
-      position: "Frontend Developer",
+      year: "2020 to 2021",
+      company: "Qontak",
+      position: "Frontend Engineer",
       details: [
-        "Create e-commerce omnichannel system that aggregate public e commerce into one platform only",
-        "Create e-commerce omnichannel system that aggregate public e commerce into one platform only",
+        "Develop and maintain omnichannel system to be user friendly, easy to use, scalable, and reliable",
+        "Handle UI for each role with different feature and functionality",
+        "Optimize the web performance with efficient and effective state management",
+        "Handle omnichannel integration into facebook"
+      ],
+    },
+    {
+      year: "2020 to 2020",
+      company: "PT. Efrindo Putra Mandiri",
+      position: "Software Engineer",
+      details: [
+        "Develop hospital asset management system (FE, BE)"
+      ],
+    },
+    {
+      year: "2019 to 2019",
+      company: "FMIPA UGM",
+      position: "Backend Engineer",
+      details: [
+        "Develop API to upload, parse, and normalize data from csv file. Then provide it into user"
+      ],
+    },
+    {
+      year: "2018 to 2018",
+      company: "DTETI UGM",
+      position: "Frontend Engineer",
+      details: [
+        "Develop tsunami warning information system SIBAT (Sistem Informasi Bahaya Tsunami)",
+        "Visualize vulnerable area with a map into user"
+      ],
+    },
+    {
+      year: "2017 to 2019",
+      company: "FKKMK UGM",
+      position: "Software Engineer",
+      details: [
+        "Organize and maintain user requirement into executable task in a team",
+        "Develop information system (FE, BE) for data management, collection, and visualization to support outbreak investigation"
       ],
     },
   ];
@@ -55,7 +97,7 @@ export default function Experience() {
         {experiences.map((exp, index) => (
           <div key={index} className={index === 0 ? "mt-10" : ""}>
             <div className="relative flex justify-between items-center">
-              <div className={`timeline w-[290px] ${index > 0 && "pt-10"}`}>
+              <div className={`timeline min-w-[290px] ${index > 0 && "pt-10"}`}>
                 <p>{exp.year}</p>
                 <p className="font-bold text-white text-lg mt-1">
                   {exp.company}
