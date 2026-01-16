@@ -78,8 +78,10 @@ export default function Introduction() {
               className="h-[450px] w-auto"
               width={246}
               height={450}
-              src="/images/profile-3.png"
+              sizes="100vw"
+              src="/images/profile.png"
               alt="Kharisma Prasetya"
+              preload
             />
           </div>
         </div>

@@ -1,0 +1,13 @@
+@layer components {
+  .footer {
+    &::before {
+      background: radial-gradient(circle, rgba(107, 127, 255, 0.2) 25%, #c4ef17 85%);
+      content: "";
+      height: 1.5px;
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+}

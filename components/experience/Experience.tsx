@@ -15,7 +15,7 @@ export default function Experience() {
         "Develop and maintain e-Posyandu system (FE, BE, Mobile) in the KOMDIGI environment",
         "Develop and maintain employee system in the KEMENHUBLA environment",
         "Develop monitoring power consumption system (FE, BE, IoT) in the manufacture factory (UPTD Sragen)",
-        "Create supporting document consists of ERD, UAT, SIT, FSD, and BRD"
+        "Create supporting document consists of ERD, UAT, SIT, FSD, and BRD",
       ],
     },
     {
@@ -26,23 +26,21 @@ export default function Experience() {
         "Develop and maintain omnichannel system to be user friendly, easy to use, scalable, and reliable",
         "Handle UI for each role with different feature and functionality",
         "Optimize the web performance with efficient and effective state management",
-        "Handle omnichannel integration into facebook"
+        "Handle omnichannel integration into facebook",
       ],
     },
     {
       year: "2020 to 2020",
       company: "PT. Efrindo Putra Mandiri",
       position: "Software Engineer",
-      details: [
-        "Develop hospital asset management system (FE, BE)"
-      ],
+      details: ["Develop hospital asset management system (FE, BE)"],
     },
     {
       year: "2019 to 2019",
       company: "FMIPA UGM",
       position: "Backend Engineer",
       details: [
-        "Develop API to upload, parse, and normalize data from csv file. Then provide it into user"
+        "Develop API to upload, parse, and normalize data from csv file. Then provide it into user.",
       ],
     },
     {
@@ -51,7 +49,7 @@ export default function Experience() {
       position: "Frontend Engineer",
       details: [
         "Develop tsunami warning information system SIBAT (Sistem Informasi Bahaya Tsunami)",
-        "Visualize vulnerable area with a map into user"
+        "Visualize vulnerable area with a map into user",
       ],
     },
     {
@@ -60,13 +58,13 @@ export default function Experience() {
       position: "Software Engineer",
       details: [
         "Organize and maintain user requirement into executable task in a team",
-        "Develop information system (FE, BE) for data management, collection, and visualization to support outbreak investigation"
+        "Develop information system (FE, BE) for data management, collection, and visualization to support outbreak investigation",
       ],
     },
   ];
 
   return (
-    <section className="experience">
+    <section className="experience relative overflow-hidden">
       <div className="py-[120px] px-[60px]">
         {/* Title section */}
         <div>
@@ -85,7 +83,9 @@ export default function Experience() {
             </div>
             <div>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/kharisma-prasetya-a39833129/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-primary inline-flex items-center gap-2"
               >
                 <span>Contact Me</span>
@@ -104,7 +104,7 @@ export default function Experience() {
                 </p>
               </div>
 
-              <div>
+              <div className="w-full">
                 <div className="information relative border-l border-gray-800 pl-[40px]">
                   <div className="information__icon absolute top-[calc(50%-17px)] left-[-17px] w-[34px] text-gray-800">
                     <AsteriskIcon />
@@ -114,7 +114,7 @@ export default function Experience() {
                       <div className="grid grid-cols-3 items-center gap-1 ">
                         <div>
                           <h3 className="text-2xl font-bold">
-                            Frontend Developer
+                            {exp.position}
                           </h3>
                         </div>
                         <div className="col-span-2">
@@ -133,6 +133,8 @@ export default function Experience() {
           </div>
         ))}
       </div>
+      <div className="absolute top-[50%] right-[-15%] w-[400px] h-[400px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[100px] -z-1"></div>
+      <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[100px] -z-1"></div>
     </section>
   );
 }
