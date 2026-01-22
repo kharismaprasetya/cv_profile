@@ -65,19 +65,23 @@ export default function Experience() {
 
   return (
     <section className="experience relative overflow-hidden">
-      <div className="py-[120px] px-[60px]">
+      <div className="py-[80px] px-8 md:px-[60px]">
         {/* Title section */}
         <div>
-          <Image
-            className="w-[34px]"
-            width={34}
-            height={35}
-            src="/icons/sparkle.svg"
-            alt="Sparkle"
-          />
-          <div className="flex justify-between items-center">
+          <div className="flex items-center gap-2">
+              <Image
+                className="w-[34px]"
+                width={34}
+                height={35}
+                src="/icons/sparkle.svg"
+                alt="Sparkle"
+              />
+            <span className="text-lg text-indigo-400 font-medium">Skill</span>
+          </div>
+
+          <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
             <div>
-              <h2 className="text-4xl font-bold">
+              <h2 className="text-3xl md:text-4xl font-bold">
                 My <span className="text-brand">Experience</span>
               </h2>
             </div>
@@ -96,28 +100,26 @@ export default function Experience() {
         {/* Experience section */}
         {experiences.map((exp, index) => (
           <div key={index} className={index === 0 ? "mt-10" : ""}>
-            <div className="relative flex justify-between items-center">
-              <div className={`timeline min-w-[290px] ${index > 0 && "pt-10"}`}>
-                <p>{exp.year}</p>
-                <p className="font-bold text-white text-lg mt-1">
+            <div className="relative flex flex-col lg:flex-row lg:justify-between lg:items-center">
+              <div className={`timeline lg:min-w-[290px] mb-3 lg:mb-0 ${index > 0 && "pt-10"}`}>
+                <p className="lg:text-base">{exp.year}</p>
+                <p className="font-bold text-white text-base lg:text-lg mt-1">
                   {exp.company}
                 </p>
               </div>
 
               <div className="w-full">
-                <div className="information relative border-l border-gray-800 pl-[40px]">
+                <div className="information relative lg:border-l lg:border-gray-800 pl-8 lg:pl-[40px]">
                   <div className="information__icon absolute top-[calc(50%-17px)] left-[-17px] w-[34px] text-gray-800">
                     <AsteriskIcon />
                   </div>
-                  <div className={index > 0 ? "pt-10" : ""}>
+                  <div className={index > 0 ? "lg:pt-10" : ""}>
                     <div className="information__position relative p-8 border border-gray-800 rounded-xl">
-                      <div className="grid grid-cols-3 items-center gap-1 ">
+                      <div className="lg:grid lg:grid-cols-3 lg:items-center lg:gap-1 ">
                         <div>
-                          <h3 className="text-2xl font-bold">
-                            {exp.position}
-                          </h3>
+                          <h3 className="text-lg lg:text-2xl font-bold mb-2 sm:mb-0 -ml-4 lg:ml-0">{exp.position}</h3>
                         </div>
-                        <div className="col-span-2">
+                        <div className="lg:col-span-2 text-sm lg:text-base">
                           <ul className="list-disc list-outside">
                             {exp.details.map((detail, detailIndex) => (
                               <li key={detailIndex}>{detail}</li>
@@ -133,8 +135,8 @@ export default function Experience() {
           </div>
         ))}
       </div>
-      <div className="absolute top-[50%] right-[-15%] w-[400px] h-[400px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[100px] -z-1"></div>
-      <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[100px] -z-1"></div>
+      <div className="absolute top-[50%] right-[-20%] lg:right-[-15%] w-[300px] lg:w-[300px] h-[200px] lg:h-[400px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[75px] lg:blur-[100px] -z-1"></div>
+      <div className="absolute bottom-[-5%] lg:bottom-[-10%] left-[-5%] lg:left-[-10%] w-[300px] lg:w-[300px] h-[200px] lg:h-[400px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[75px] lg:blur-[100px] -z-1"></div>
     </section>
   );
 }
