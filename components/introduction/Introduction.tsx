@@ -97,7 +97,7 @@ export default function Introduction() {
             />
           </div>
           <div className="hidden md:block absolute top-0 left-0 w-full h-full rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[128px] -z-1"></div>
-          <div className="hidden md:block flex justify-center items-center h-full">
+          <div className="hidden md:block lg:flex lg:justify-center lg:items-center h-full">
             <Image
               className="h-[450px] w-auto"
               width={246}
