@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Experience from "@/components/experience/Experience";
 import Footer from "@/components/footer/Footer";
 import Introduction from "@/components/introduction/Introduction";
+import SkillSliding from '@/components/skill/SkillSliding';
 
 export const metadata: Metadata = {
   title: "Kharisma Prasetya - CV Profile",
@@ -28,6 +29,7 @@ export default function Home() {
   return (
     <div>
       <Introduction />
+      <SkillSliding />
       <Experience />
       <Footer />
     </div>

@@ -1,0 +1,57 @@
+@layer components {
+  .skill-sliding::before {
+    background: linear-gradient(
+      108.73deg,
+      rgba(107, 127, 255, 0.2) 16.88%,
+      #c4ef17 91.69%
+    );
+    content: "";
+    height: 1.5px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .skill-sliding::after {
+    background: linear-gradient(
+      108.73deg,
+      rgba(107, 127, 255, 0.2) 16.88%,
+      #c4ef17 91.69%
+    );
+    content: "";
+    height: 1.5px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    transform: rotate(-180deg);
+  }
+
+  .skill-sliding {
+    overflow-x: auto;
+  }
+
+  .skill-sliding::-webkit-scrollbar {
+    display: none;
+  }
+
+  .skill-group {
+    animation: slide-left 20s infinite linear;
+    padding-right: 1em;
+    gap: 1em;
+  }
+
+  .skill-swiper {
+    flex: 0 0 5em;
+  }
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}

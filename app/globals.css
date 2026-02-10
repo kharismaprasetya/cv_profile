@@ -35,6 +35,7 @@
 /* ---- Component Styles ---- */
 @import "../styles/css/component/experience.css";
 @import "../styles/css/component/footer.css";
+@import "../styles/css/component/skill-sliding.css";
 
 /* Global styles */
 body {
