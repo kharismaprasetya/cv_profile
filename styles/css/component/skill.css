@@ -1,0 +1,36 @@
+@layer components {
+  .skill .information::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      120deg,
+      rgba(107, 127, 255, 0.5),
+      rgba(196, 239, 23, 0.8)
+    );
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+  }
+
+  .skill .information {
+    background: var(--background-alternative);
+  }
+
+  .skill .information:hover {
+    background: var(--background);
+  }
+}
