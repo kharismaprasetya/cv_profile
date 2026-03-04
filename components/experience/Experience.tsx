@@ -141,8 +141,8 @@ export default function Experience() {
           </div>
         ))}
       </div>
-      <div className="absolute top-[50%] right-[-20%] lg:right-[-15%] w-[300px] lg:w-[300px] h-[200px] lg:h-[400px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[75px] lg:blur-[100px] -z-1"></div>
-      <div className="absolute bottom-[-5%] lg:bottom-[-10%] left-[-5%] lg:left-[-10%] w-[300px] lg:w-[300px] h-[200px] lg:h-[400px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[75px] lg:blur-[100px] -z-1"></div>
+      <div className="absolute top-[50%] right-[-20%] lg:right-[-15%] w-[300px] h-[200px] lg:h-[400px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[75px] lg:blur-[100px] -z-1"></div>
+      <div className="absolute bottom-[-5%] lg:bottom-[-10%] left-[-5%] lg:left-[-10%] w-[300px] h-[200px] lg:h-[400px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[75px] lg:blur-[100px] -z-1"></div>
     </section>
   );
 }

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { FaStar, FaRegStar } from "react-icons/fa";
-import AsteriskIcon from "@/components/icon/AsteriskIcon";
 
 export default function Skill() {
   const skills = [
@@ -11,7 +10,7 @@ export default function Skill() {
       size: {
         width: 125,
         height: 25,
-      }
+      },
     },
     {
       name: "Nuxt JS",
@@ -20,7 +19,7 @@ export default function Skill() {
       size: {
         width: 140,
         height: 35,
-      }
+      },
     },
     {
       name: "React Native",
@@ -29,7 +28,7 @@ export default function Skill() {
       size: {
         width: 160,
         height: 40,
-      }
+      },
     },
     {
       name: "Angular",
@@ -38,7 +37,7 @@ export default function Skill() {
       size: {
         width: 160,
         height: 40,
-      }
+      },
     },
     {
       name: "React JS",
@@ -47,7 +46,7 @@ export default function Skill() {
       size: {
         width: 120,
         height: 40,
-      }
+      },
     },
     {
       name: "Vue JS",
@@ -56,7 +55,7 @@ export default function Skill() {
       size: {
         width: 40,
         height: 40,
-      }
+      },
     },
     {
       name: "Node JS",
@@ -65,7 +64,7 @@ export default function Skill() {
       size: {
         width: 160,
         height: 40,
-      }
+      },
     },
     {
       name: "Bootstrap",
@@ -74,7 +73,7 @@ export default function Skill() {
       size: {
         width: 120,
         height: 40,
-      }
+      },
     },
     {
       name: "Tailwind CSS",
@@ -83,7 +82,7 @@ export default function Skill() {
       size: {
         width: 60,
         height: 40,
-      }
+      },
     },
     {
       name: "HTML",
@@ -92,7 +91,7 @@ export default function Skill() {
       size: {
         width: 40,
         height: 40,
-      }
+      },
     },
     {
       name: "CSS",
@@ -101,7 +100,7 @@ export default function Skill() {
       size: {
         width: 40,
         height: 40,
-      }
+      },
     },
     {
       name: "JavaScript",
@@ -110,7 +109,7 @@ export default function Skill() {
       size: {
         width: 40,
         height: 40,
-      }
+      },
     },
     {
       name: "TypeScript",
@@ -119,7 +118,7 @@ export default function Skill() {
       size: {
         width: 160,
         height: 40,
-      }
+      },
     },
     {
       name: "SASS",
@@ -128,7 +127,7 @@ export default function Skill() {
       size: {
         width: 52,
         height: 40,
-      }
+      },
     },
     {
       name: "LESS",
@@ -137,7 +136,7 @@ export default function Skill() {
       size: {
         width: 80,
         height: 40,
-      }
+      },
     },
     {
       name: "Django",
@@ -146,7 +145,7 @@ export default function Skill() {
       size: {
         width: 80,
         height: 40,
-      }
+      },
     },
     {
       name: "MySQL",
@@ -155,7 +154,7 @@ export default function Skill() {
       size: {
         width: 80,
         height: 40,
-      }
+      },
     },
     {
       name: "PostgreSQL",
@@ -164,7 +163,7 @@ export default function Skill() {
       size: {
         width: 240,
         height: 40,
-      }
+      },
     },
     {
       name: "Docker",
@@ -173,7 +172,7 @@ export default function Skill() {
       size: {
         width: 160,
         height: 40,
-      }
+      },
     },
     {
       name: "Nginx",
@@ -182,7 +181,7 @@ export default function Skill() {
       size: {
         width: 100,
         height: 20,
-      }
+      },
     },
     {
       name: "AWS",
@@ -191,7 +190,7 @@ export default function Skill() {
       size: {
         width: 70,
         height: 35,
-      }
+      },
     },
     {
       name: "GCP",
@@ -200,7 +199,7 @@ export default function Skill() {
       size: {
         width: 240,
         height: 40,
-      }
+      },
     },
   ];
   return (
@@ -230,7 +229,7 @@ export default function Skill() {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="information relative flex justify-center items-center gap-6 border border-gray-800 rounded-xl px-2 md:px-4 py-4 md:py-8"
+              className="information relative flex justify-center items-center gap-6 border border-gray-800 rounded-xl px-2 md:px-4 py-4 md:py-8 hover:scale-[105%] transition-transform duration-500"
             >
               <div className="flex items-center justify-center w-[50%]">
                 <Image
@@ -243,7 +242,9 @@ export default function Skill() {
               </div>
               <div className="h-full w-[4px] bg-indigo-900 rounded-lg"></div>
               <div className="w-[40%] lg:w-[30%]">
-                <p className="font-bold text-brand text-sm lg:text-base">{skill.name}</p>
+                <p className="font-bold text-brand text-sm lg:text-base">
+                  {skill.name}
+                </p>
                 <p>
                   {[...Array(skill.rating)].map((_, i) => (
                     <FaStar key={i} className="inline text-yellow-500" />
@@ -257,6 +258,28 @@ export default function Skill() {
           ))}
         </div>
       </div>
+      {/* Decorative element */}
+      <div className="absolute top-[50%] left-0 -z-1">
+        <Image
+          className="animate-spin [animation-duration:6s] opacity-50"
+          width={70}
+          height={70}
+          src="/icons/diamond-star2.svg"
+          alt="Diamond Star"
+        />
+      </div>
+      <div className="absolute bottom-0 right-[5%]">
+        <Image
+          className="animate-left-right"
+          width={200}
+          height={85}
+          src="/icons/lefttorightarrow.svg"
+          alt="Left to Right Arrow"
+        />
+      </div>
+      <div className="absolute top-[-5%] lg:top-[-10%] left-[calc(50%-150px)] w-[300px] h-[200px] lg:h-[400px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[75px] lg:blur-[100px] -z-1"></div>
+      <div className="absolute top-[50%] right-[-20%] lg:right-[-15%] w-[300px] h-[200px] lg:h-[400px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[75px] lg:blur-[100px] -z-1"></div>
+      <div className="absolute bottom-[-5%] lg:bottom-[-10%] left-[-5%] lg:left-[-10%] w-[300px] h-[200px] lg:h-[400px] rounded-[50%] bg-[rgba(196,239,23,.2)] blur-[75px] lg:blur-[100px] -z-1"></div>
     </section>
   );
 }
