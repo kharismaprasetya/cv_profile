@@ -237,7 +237,7 @@ export default function Skill() {
                   width={skill.size?.width || 40}
                   height={skill.size?.height || 40}
                   src={skill.logo}
-                  sizes="(max-width: 767px) 100vw, 33vw"
+                  sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
                   alt={skill.name}
                 />
               </div>
