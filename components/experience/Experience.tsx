@@ -69,20 +69,22 @@ export default function Experience() {
         {/* Title section */}
         <div>
           <div className="flex items-center gap-2">
-              <Image
-                className="w-[34px]"
-                width={34}
-                height={35}
-                src="/icons/sparkle.svg"
-                alt="Sparkle"
-              />
-            <span className="text-lg text-indigo-400 font-medium">Skill</span>
+            <Image
+              className="w-[34px]"
+              width={34}
+              height={35}
+              src="/icons/sparkle.svg"
+              alt="Sparkle"
+            />
+            <span className="text-lg text-indigo-400 font-medium">
+              Experience
+            </span>
           </div>
 
           <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold">
-                My <span className="text-brand">Experience</span>
+                My <span className="text-brand">Experiences</span>
               </h2>
             </div>
             <div>
@@ -101,7 +103,9 @@ export default function Experience() {
         {experiences.map((exp, index) => (
           <div key={index} className={index === 0 ? "mt-10" : ""}>
             <div className="relative flex flex-col lg:flex-row lg:justify-between lg:items-center">
-              <div className={`timeline lg:min-w-[290px] mb-3 lg:mb-0 ${index > 0 && "pt-10"}`}>
+              <div
+                className={`timeline lg:min-w-[290px] mb-3 lg:mb-0 ${index > 0 && "pt-10"}`}
+              >
                 <p className="lg:text-base">{exp.year}</p>
                 <p className="font-bold text-white text-base lg:text-lg mt-1">
                   {exp.company}
@@ -110,14 +114,16 @@ export default function Experience() {
 
               <div className="w-full">
                 <div className="information relative lg:border-l lg:border-gray-800 pl-8 lg:pl-[40px]">
-                  <div className="information__icon absolute top-[calc(50%-17px)] left-[-17px] w-[34px] text-gray-800">
+                  <div className={`information__icon absolute top-[calc(50%)] left-[-17px] w-[34px] text-gray-800 ${index === 0 ? "top-[calc(50%-17px)]" : "top-[50%]"}`}>
                     <AsteriskIcon />
                   </div>
                   <div className={index > 0 ? "lg:pt-10" : ""}>
                     <div className="information__position relative p-8 border border-gray-800 rounded-xl">
                       <div className="lg:grid lg:grid-cols-3 lg:items-center lg:gap-1 ">
                         <div>
-                          <h3 className="text-lg lg:text-2xl font-bold mb-2 sm:mb-0 -ml-4 lg:ml-0">{exp.position}</h3>
+                          <h3 className="text-lg lg:text-2xl font-bold mb-2 sm:mb-0 -ml-4 lg:ml-0">
+                            {exp.position}
+                          </h3>
                         </div>
                         <div className="lg:col-span-2 text-sm lg:text-base">
                           <ul className="list-disc list-outside">

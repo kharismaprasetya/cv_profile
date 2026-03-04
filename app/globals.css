@@ -4,6 +4,7 @@
 :root {
   --background: #0a0a09;
   --background-secondary: #242423;
+  --background-alternative: #141413;
   --foreground: #171717;
   --text-color: #9fa0a6;
   --title-color: #fbffed;
@@ -36,6 +37,7 @@
 @import "../styles/css/component/experience.css";
 @import "../styles/css/component/footer.css";
 @import "../styles/css/component/skill-sliding.css";
+@import "../styles/css/component/skill.css";
 
 /* Global styles */
 body {

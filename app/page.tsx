@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Experience from "@/components/experience/Experience";
 import Footer from "@/components/footer/Footer";
 import Introduction from "@/components/introduction/Introduction";
+import Skill from '@/components/skill/Skill';
 import SkillSliding from '@/components/skill/SkillSliding';
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default function Home() {
       <Introduction />
       <SkillSliding />
       <Experience />
+      <Skill />
       <Footer />
     </div>
     // <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
