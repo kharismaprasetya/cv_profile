@@ -64,7 +64,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="experience relative overflow-hidden">
+    <section id="experience" className="experience relative overflow-hidden">
       <div className="py-[80px] px-8 md:px-[60px]">
         {/* Title section */}
         <div>
