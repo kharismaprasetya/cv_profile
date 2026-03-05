@@ -203,7 +203,7 @@ export default function Skill() {
     },
   ];
   return (
-    <section className="skill relative overflow-hidden">
+    <section id="skill" className="skill relative overflow-hidden">
       <div className="bg-grid py-[80px] px-8 md:px-[60px]">
         {/* Title section */}
         <div>

@@ -3,7 +3,7 @@ import { FaDownload } from "react-icons/fa6";
 
 export default function Introduction() {
   return (
-    <section className="introduction h-dvh">
+    <section id="introduction" className="introduction h-dvh">
       <div className="bg-grid md:grid md:grid-cols-2 md:gap-4 py-4 md:py-[10vh] px-8 md:px-[60px] h-dvh">
         <div className="relative">
           <div className="introduction__subtitle font-medium mb-[1rem] text-indigo-400 text-base md:text-lg">

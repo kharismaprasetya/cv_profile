@@ -1,0 +1,18 @@
+@layer components {
+  .navbar__top {
+    &::after {
+      background: linear-gradient(
+        108.73deg,
+        rgba(107, 127, 255, 0.2) 16.88%,
+        #c4ef17 91.69%
+      );
+      /* background: radial-gradient(circle, rgba(107, 127, 255, 0.2) 25%, #c4ef17 85%); */
+      content: "";
+      height: 1.5px;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+}
