@@ -1,18 +1,57 @@
 @layer components {
-  .navbar__top {
-    &::after {
-      background: linear-gradient(
-        108.73deg,
-        rgba(107, 127, 255, 0.2) 16.88%,
-        #c4ef17 91.69%
-      );
-      /* background: radial-gradient(circle, rgba(107, 127, 255, 0.2) 25%, #c4ef17 85%); */
-      content: "";
-      height: 1.5px;
-      left: 0;
-      bottom: 0;
-      position: absolute;
-      width: 100%;
-    }
+  .navbar__top::after {
+    background: linear-gradient(
+      108.73deg,
+      rgba(107, 127, 255, 0.2) 16.88%,
+      #c4ef17 91.69%
+    );
+    content: "";
+    height: 1.5px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .navbar__top .menu-button {
+    cursor: pointer;
+  }
+
+  .navbar__top .menu-button span {
+    position: absolute;
+    transition: all .3s ease-out;
+    background-color: var(--brand-color);
+    border-radius: 5px;
+    height: 2px;
+    right: 0;
+    width: 30px;
+  }
+
+  .navbar__top .menu-button .first {
+    top: 0px;
+  }
+
+  .navbar__top .menu-button .active .first {
+    transform: rotate(45deg) translate(10px, 9px);
+  }
+
+  .navbar__top .menu-button .second {
+    background-color: var(--title-color);
+    top: 14px;
+    width: 20px;
+    opacity: 1;
+  }
+
+  .navbar__top .menu-button .active .second {
+    opacity: 0;
+    transition: all .3s ease-out;
+  }
+
+  .navbar__top .menu-button .last {
+    top: 28px;
+  }
+
+  .navbar__top .menu-button .active .last {
+    transform: rotate(-45deg) translate(10px, -9px);
   }
 }
