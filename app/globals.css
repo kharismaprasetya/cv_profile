@@ -14,6 +14,10 @@
 }
 
 @theme inline {
+  --color-main: var(--background);
+  --color-secondary: var(--background-secondary);
+  --color-alternative: var(--background-alternative);
+  --color-brand: var(--brand-color);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -31,11 +35,11 @@
 /* ---- Global Styles ---- */
 @import "../styles/css/animation.css";
 @import "../styles/css/button.css";
-@import "../styles/css/color.css";
 
 /* ---- Component Styles ---- */
 @import "../styles/css/component/experience.css";
 @import "../styles/css/component/footer.css";
+@import "../styles/css/component/project.css";
 @import "../styles/css/component/skill-sliding.css";
 @import "../styles/css/component/skill.css";
 @import "../styles/css/component/top-navbar.css";

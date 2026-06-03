@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Experience from "@/components/experience/Experience";
 import Footer from "@/components/footer/Footer";
 import Introduction from "@/components/introduction/Introduction";
+import Project from '@/components/project/Project';
 import TopNavBar from '@/components/navbar/TopNavBar';
 import Skill from '@/components/skill/Skill';
 import SkillSliding from '@/components/skill/SkillSliding';
@@ -35,6 +36,7 @@ export default function Home() {
       <SkillSliding />
       <Experience />
       <Skill />
+      <Project />
       <Footer />
     </div>
   );
