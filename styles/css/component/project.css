@@ -7,26 +7,7 @@
     display: none;
   }
 
-  .project-group {
-    animation: slide-left 20s infinite linear;
-    padding-right: 1em;
-    gap: 1em;
-  }
-
-  .project-slider:hover .project-group {
-    animation-play-state: paused;
-  }
-
-  .project-swiper {
-    flex: 0 0 5em;
-  }
-
-  @keyframes slide-left {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  .project-slider {
+    cursor: default;
   }
 }
