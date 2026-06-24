@@ -16,9 +16,24 @@ const projects = [
     image: "/images/jepara/erpnext-dashboard.jpg",
   },
   {
-    title: "MaritimHub",
+    title: "Praktis",
+    description: "E-Commerce Omnichannel",
+    image: "/images/praktis/praktis-omnichannel.svg",
+  },
+  {
+    title: "Datamedika",
     description: "Digital Profiling (DIPRO)",
     image: "/images/maritimhub/maritimhub.png",
+  },
+  {
+    title: "SPBE - Web",
+    description: "Posyandu",
+    image: "/images/spbe/posyandu.png",
+  },
+  {
+    title: "SPBE - Mobile",
+    description: "Posyandu",
+    image: "/images/spbe/posyandu.png",
   },
   {
     title: "MaritimHub",
