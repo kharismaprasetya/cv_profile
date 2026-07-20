@@ -1,0 +1,13 @@
+@layer components {
+  .project {
+    overflow-x: auto;
+  }
+
+  .project::-webkit-scrollbar {
+    display: none;
+  }
+
+  .project-slider {
+    cursor: default;
+  }
+}
