@@ -26,14 +26,24 @@ const projects = [
     image: "/images/maritimhub/maritimhub.png",
   },
   {
-    title: "SPBE - Web",
-    description: "Posyandu",
-    image: "/images/spbe/posyandu.png",
+    title: "SPBE - Posyandu",
+    description: "Posyandu Web",
+    image: "/images/spbe/posyandu-web.png",
   },
   {
-    title: "SPBE - Mobile",
-    description: "Posyandu",
-    image: "/images/spbe/posyandu.png",
+    title: "SPBE - Posyandu",
+    description: "Posyandu Mobile",
+    image: "/images/spbe/posyandu-mobile.png",
+  },
+  {
+    title: "SPBE - Sideka",
+    description: "Sideka Web",
+    image: "/images/spbe/sideka-web.png",
+  },
+  {
+    title: "SPBE - Sideka",
+    description: "Sideka Mobile",
+    image: "/images/spbe/sideka-mobile.png",
   },
   {
     title: "MaritimHub",
