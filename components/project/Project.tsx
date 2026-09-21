@@ -22,8 +22,8 @@ const projects = [
   },
   {
     title: "Datamedika",
-    description: "Digital Profiling (DIPRO)",
-    image: "/images/maritimhub/maritimhub.png",
+    description: "BPJS Claim Automation",
+    image: "/images/datamedika/claim-list.jpg",
   },
   {
     title: "SPBE - Posyandu",
@@ -48,10 +48,25 @@ const projects = [
   {
     title: "Sragen - Factory Sharing",
     description: "ERP for Factory Sharing",
-    image: "",
+    image: "/images/sragen/iot-monitoring.jpg",
   },
   {
-    title: "MaritimHub",
+    title: "JICA - ERP for Manufacturing",
+    description: "ERP for Production and Manufacturing",
+    image: "/images/jica/production-monitoring.jpg",
+  },
+  {
+    title: "WE Group",
+    description: "GCP DevOps",
+    image: "/images/we-group/gcp-dashboard.png",
+  },
+  {
+    title: "MaritimHub - DIPRO",
+    description: "Digital Profiling (DIPRO)",
+    image: "/images/maritimhub/maritimhub.png",
+  },
+  {
+    title: "MaritimHub - Cloud",
     description: "Digital Profiling (DIPRO)",
     image: "/images/maritimhub/maritimhub.png",
   },
