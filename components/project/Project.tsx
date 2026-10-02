@@ -63,12 +63,12 @@ const projects = [
   {
     title: "MaritimHub - DIPRO",
     description: "Digital Profiling (DIPRO)",
-    image: "/images/maritimhub/maritimhub.png",
+    image: "/images/maritimhub/dipro-nine-box-talent.png",
   },
   {
     title: "MaritimHub - Cloud",
-    description: "Digital Profiling (DIPRO)",
-    image: "/images/maritimhub/maritimhub.png",
+    description: "Cloud Storage for Internal",
+    image: "/images/maritimhub/cloud-storage.png",
   },
 ];
 
