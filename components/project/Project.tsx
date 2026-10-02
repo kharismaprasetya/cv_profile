@@ -22,8 +22,8 @@ const projects = [
   },
   {
     title: "Datamedika",
-    description: "Digital Profiling (DIPRO)",
-    image: "/images/maritimhub/maritimhub.png",
+    description: "BPJS Claim Automation",
+    image: "/images/datamedika/claim-list.jpg",
   },
   {
     title: "SPBE - Posyandu",
@@ -46,9 +46,29 @@ const projects = [
     image: "/images/spbe/sideka-mobile.png",
   },
   {
-    title: "MaritimHub",
+    title: "Sragen - Factory Sharing",
+    description: "ERP for Factory Sharing",
+    image: "/images/sragen/iot-monitoring.jpg",
+  },
+  {
+    title: "JICA - ERP for Manufacturing",
+    description: "ERP for Production and Manufacturing",
+    image: "/images/jica/production-monitoring.jpg",
+  },
+  {
+    title: "WE Group",
+    description: "GCP DevOps",
+    image: "/images/we-group/gcp-dashboard.png",
+  },
+  {
+    title: "MaritimHub - DIPRO",
     description: "Digital Profiling (DIPRO)",
-    image: "/images/maritimhub/maritimhub.png",
+    image: "/images/maritimhub/dipro-nine-box-talent.png",
+  },
+  {
+    title: "MaritimHub - Cloud",
+    description: "Cloud Storage for Internal",
+    image: "/images/maritimhub/cloud-storage.png",
   },
 ];
 
@@ -151,7 +171,7 @@ export default function Project() {
   return (
     <section id="project" className="project">
       <div className="py-[80px] px-8 md:px-[60px]">
-        <div className="grid grid-cols-3 gap-4">
+        <div className="sm:grid sm:grid-cols-3 sm:gap-4">
           {/* Title section */}
           <div>
             <div className="flex items-center gap-2">
@@ -162,33 +182,33 @@ export default function Project() {
                 src="/icons/sparkle.svg"
                 alt="Sparkle"
               />
-              <span className="text-lg text-indigo-400 font-medium">
+              <span className="sm:text-lg text-indigo-400 font-medium">
                 Explore
               </span>
             </div>
-            <div className="text-2xl font-bold text-white mt-4">
+            <div className="text-xl sm:text-2xl font-bold text-white mt-4">
               Explore My Latest <span className="text-brand">Projects</span>
             </div>
-            <div className="my-4">
+            <div className="my-4 text-sm sm:text-base">
               Experience excellence in software development through my latest
               projects, showcasing innovation, quality, and real-world impact.
               Each project reflects my commitment to delivering exceptional
               results and pushing the boundaries of technology.
             </div>
             <div
-              className="flex gap-4 w-fit bg-secondary p-2 rounded-4xl"
+              className="flex gap-2 sm:gap-4 w-fit bg-secondary p-2 rounded-4xl justify-self-center sm:justify-self-start"
               onMouseEnter={() => { isPausedRef.current = true; }}
               onMouseLeave={() => { isPausedRef.current = false; }}
             >
               <button
-                className="w-[46px] h-[46px] rounded-full bg-gray-900 flex items-center justify-center hover:cursor-pointer hover:bg-brand"
+                className="w-[38px] h-[38px] sm:w-[46px] sm:h-[46px] rounded-full bg-gray-900 flex items-center justify-center hover:cursor-pointer hover:bg-brand"
                 onClick={handlePrev}
                 aria-label="Previous"
               >
                 <FaArrowLeftLong className="text-white" />
               </button>
               <button
-                className="w-[46px] h-[46px] rounded-full bg-gray-900 flex items-center justify-center hover:cursor-pointer hover:bg-brand"
+                className="w-[38px] h-[38px] sm:w-[46px] sm:h-[46px] rounded-full bg-gray-900 flex items-center justify-center hover:cursor-pointer hover:bg-brand"
                 onClick={handleNext}
                 aria-label="Next"
               >
@@ -199,7 +219,7 @@ export default function Project() {
 
           {/* Project slider section */}
           <div
-            className="project-slider col-span-2 overflow-hidden"
+            className="project-slider col-span-2 overflow-hidden mt-4 sm:mt-0"
             onMouseEnter={() => { isPausedRef.current = true; }}
             onMouseLeave={() => { isPausedRef.current = false; }}
           >
