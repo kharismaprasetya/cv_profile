@@ -41,7 +41,7 @@ export default function Introduction() {
               className="h-[300px] w-auto"
               width={200}
               height={300}
-              sizes="100vw"
+              sizes="(max-width: 640px) 100vw, 275px"
               src="/images/profile.png"
               alt="Kharisma Prasetya"
               preload
